@@ -3,43 +3,122 @@
     <head>
        <title>Portfolio | Sydney Huang</title> 
        <link href="index.css" rel="stylesheet">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+       <link rel="icon" href="images/personal logo.png" type="image/png" width="16">
+       <link rel="preconnect" href="https://fonts.googleapis.com" >
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
        
     </head>
     <body>
         <header class ="navigation">
             <nav class = "inline-block">
-                <h1 id = "myName">Sydney Huang</h1>
+                <img id="personalLogo" src="images/personal logo.png" alt="personal logo" width="58">
                 <ul class = "navItem">
-                    <li class = "inline-block">PROJECTS</li>
-                    <li class = "inline-block">ABOUT ME</li>
-                    <li class = "inline-block">RESUME</li>
+                    <li class = "inline-block">
+                        <a class="navItemStyle" href="#projectsSection">PROJECTS</a>
+                    </li>
+                    <li class = "inline-block">
+                        <a class="navItemStyle" href="#aboutSection">ABOUT</a>
+                    </li>
+                    <li class = "inline-block">
+                        <a class="navItemStyle" href="#resumeSection">RESUME</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         
-        <section>
+        <section id="heroSection">
             <div class = "content">
                 <div id="beigeHeroBox"></div>
                 <div id="blueHeroBox">
-                    <img id = "wavesGraphic" src="images/waves_graphic.png" alt="waves minimalist graphic" width="80">
+                    <img id = "wavesGraphic" src="images/waves_graphic.png" alt="waves minimalist graphic" width="90">
                     <img id = "portrait" src = "images/portrait.jpg" alt="self-portrait" width="450"> 
+                    <div class= "heroTextBox">
+                        <p id="subdisplayText">User Experience Designer / Product Designer</p>
+                        <h3 id="DisplayText">Hey There! I'm Sydney</h2>
+                        <p id="heroText">I specialize in user-centered design and ultimately enjoy simple and intuitive concepts that balance pragmatism with elegance.
+                        </p>
+                        <button class = "btn inline-block">
+                            <input type="image" src="https://www.maryville.edu/wp-content/uploads/2015/11/Linkedin-logo-1-550x550-300x300.png" alt="LinkedIn Profile" width="34" height="34">
+                        </button>
+                        <p id="contactText" class="inline-block">email me: sydneyhuang8@gmail.com</p>
+                        
+                    </div>
                 </div>
-                <div class= "heroTextBox">
-                    <p id="subdisplayText">User Experience Designer / Product Designer</p>
-                    <h3 id="DisplayText">Hey There! I'm Sydney</h2>
-                    <p id="heroText">I specialize in user-centered design and ultimately enjoy simple and intuitive concepts that balance pragmatism with elegance.
+                
+            </div>
+        </section>
+        <section id="projectsSection">
+            <h2 class="homepageHeader">Projects</h2>
+            <section id="projectCardGrid">
+                <div id="card1">
+                    <div id="img1">img</div>
+                    <div id="card1info">
+                        <h5 class="projectHeading">MentorMe Mobile App</h5>
+                        <p>MentorMe is a mobile app that helps up-and-coming job seekers reach out to potential career mentors interested in advising the next generation of working professionals </p>
+                        <button class="readMoreBtn">read more </button>
+                    </div>
+                </div>
+                <div id="card2">
+                    <div id="img2">img</div>
+                    <div id="card2info">
+                        <h5 class="projectHeading">MentorMe Mobile App</h5>
+                        <p>MentorMe is a mobile app that helps up-and-coming job seekers reach out to potential career mentors interested in advising the next generation of working professionals </p>
+                        <button class="readMoreBtn">read more </button>
+                    </div>
+                </div>
+                <div id="card3">
+                    <div id="img3">img</div>
+                    <div id="card3info">
+                        <h5 class="projectHeading">MentorMe Mobile App</h5>
+                        <p>MentorMe is a mobile app that helps up-and-coming job seekers reach out to potential career mentors interested in advising the next generation of working professionals </p>
+                        <button class="readMoreBtn">read more </button>
+                    </div>
+                </div>
+           
+            </section>
+        </section>
+       
+
+        <section id="aboutSection">
+            <div id="aboutBeigeBox">
+                <h2 class="homepageHeader">About</h2>
+                <div id="aboutTextBox">
+                    <p class="caseStudySubHeading">My Story</p>
+                    <p>While in university, I started as a Computer Science major, where I quickly learned that programming wasn’t for me. I switched to Psychology after finding an interest in human interaction and behavior, but I still chose to retain a minor in Digital information systems because of my love for solving problems through technological innovation; this allowed me access to an array of informatics classes that introduced me to the world of UX/UX Design. As a result, I found that UX/UI design to be a happy marriage between my interest in human behavior and my love of problem solving technology. 
                     </p>
-                    <button class = "btn inline-block">
-                        <input type="image" src="https://www.maryville.edu/wp-content/uploads/2015/11/Linkedin-logo-1-550x550-300x300.png" alt="LinkedIn Profile" width="34" height="34">
-                    </button>
-                    <p id="contactText" class="inline-block">email me: sydneyhuang8@gmail.com</p>
-                    
+                    <p class="caseStudySubHeading">My Approach</p>
+                    <p >With my background in Psychology, I understand the importance of user research and personally believe that a sound design solution is always data driven. I strongly believe in the importance of understanding the needs of the user through user research as the driving force behind the a design concept. Design should first and foremost solve a need while making the experience effortless, enjoyable, and human. </p>
+                    <p class="caseStudySubHeading">Some Fun Stuff:)</p>
+                    <p >In my downtime, you can find me relaxing with a cup of tea and a good novel for a bit of escapism, debating MCU fan theories with friends, or enjoying a meal with my family at one of the many good-eats in Irvine.</p>
                 </div>
             </div>
         </section>
+       
+        
+
+        <section id="skillsSection">
+            <h2 class="homepageHeader">UX Skills</h2>
+            <div class="flexcontainer">
+                <div class="skillItem">
+                    <img src="images/user_research.png" alt="user data" width="50">
+                    <h6 class="skillHeading">User Research</h6>
+                 </div>
+    
+                 <div class="skillItem">
+                    <img src="images/wireframe.png" alt="user data" width="50">
+                     <h6 class="skillHeading">Wireframing</h6>
+                 </div>
+    
+                 <div class="skillItem">
+                    <img src="images/prototype.png" alt="user data" width="50">
+                     <h6 class="skillHeading">Prototyping</h6>
+                 </div>
+            </div>
+        </section>   
+       
+                
+
         <footer> Copyright &copy; Sydney Huang 2022</footer>   
     </body>
    

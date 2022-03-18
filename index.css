@@ -3,20 +3,25 @@
     vertical-align: top;
 
 }
-.btn {
-    padding-left: 30px;
-    border: none;
-    background:none;
-    text-align: left;
+
+body {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+    align-items: center;
 }
 
 nav {
     width: 100%;
-    padding: 1%;
+    padding-bottom: 1%;
+    padding-top: 0%;
+    height: 50px;
+    margin-bottom: 20px;
 }
 .navItem {
     font-family:'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.2em;
 }
@@ -24,7 +29,15 @@ li {
     padding-left: 20px;
     padding-right: 20px;
 }
+.navItemStyle {
+    text-decoration: none;
+    color: black;
+}
+.navItemStyle:hover {
+    color:#57768E;
+}
 ul {
+    margin-top: 2%;
     display: inline-block;
     margin-left: auto;
     margin-right:2%;
@@ -32,15 +45,29 @@ ul {
     position: fixed;
     right: 2%;
     z-index: 9;
+    cursor: pointer;
+}
+
+#personalLogo {
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 #myName {
     font-family:'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     padding: 0;
-    margin-left: 2%;
+    margin-left: 1%;
     display: inline-block;
+}
+
+/*hero secton code*/
+
+#heroSection {
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
 
 #subdisplayText {
@@ -57,19 +84,25 @@ ul {
     height: 250px;
     padding-top: 30px;
     padding-bottom: 30px;
-    position: absolute;
-    top: 180px;
-    left: 250px;
+    position: relative;
+    right: 18%;
+    top: 17%;
+  
 }
 
 .content {
-    width:100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80vw;
     height:800px;
     position: relative;
+  
+
 }
 #heroText {
     font-family:'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
     width: 23em;
@@ -90,6 +123,15 @@ ul {
    font-weight:bolder;
 }
 
+.btn {
+    padding-left: 30px;
+    padding-top: 8px;
+    margin: auto;
+    border: none;
+    background:none;
+    text-align: left;
+}
+
 #wavesGraphic {
     position: absolute;
     left: 250px;
@@ -106,9 +148,8 @@ ul {
     background-color: #D4E2E9;
     height: 680px;
     width: 850px;
-    position: absolute;
-    right: 140px;
-    top: 50px;
+    position: relative;
+    left: 15%;
     box-shadow: 0px 4px 4px #57768E;
 }
 #beigeHeroBox {
@@ -116,17 +157,299 @@ ul {
     height: 560px;
     width: 150px;
     position: absolute;
-    right: 90px;
-    top: 230px;
-
+    right: 7%;
+    top: 25%;
 }
+
+.homepageHeader {
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/*projects section*/
+
+#projectsSection {
+    justify-items: center;
+    height: 800px;
+}
+
+#projectCardGrid {
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-gap: 20px;
+    width: 80%;
+    height: 600px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+}
+
+
+#card1 {
+    border: 1px solid lightgrey;
+    box-shadow: 3px 3px 5px #5A6370;
+    grid-area: card1;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "img1 card1info"
+    
+}
+
+#img1 {
+    grid-area: img1;
+    background-color: grey;
+}
+
+#card1info {
+    padding: 15px;
+    grid-area: card1info;
+}
+
+#card2 {
+    border: 1px solid lightgrey;
+    box-shadow: 3px 3px 5px #5A6370;
+    grid-area: card2;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "img2 card2info"
+}
+
+#img2 {
+    grid-area: img2;
+    background-color: grey;
+}
+
+#card2info {
+    padding: 15px;
+    grid-area: card2info;
+}
+
+#card3 {
+    border: 1px solid lightgrey;
+    box-shadow: 3px 3px 5px #5A6370;
+    grid-area: card3;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "img3 card3info"
+}
+
+#img3 {
+    grid-area: img3;
+    background-color: grey;
+}
+
+#card3info {
+    padding: 15px;
+    grid-area: card3info;
+}
+
+.projectHeading {
+    margin-top: .5em;
+    margin-bottom: .5emm;
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.readMoreBtn {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-decoration: underline;
+    border: none;
+    background:none;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom:0.5em;
+}
+
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 16px;
+    text-align:center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.projectDescription {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    line-height: 2em;
+}
+
+/*ABout Section*/
+
+#aboutSection {
+    height: 800px;
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+
+#aboutBeigeBox {
+    background-color: #E5D4C4;
+    height: 750px;
+    width: 540px;
+    position:static;
+    margin-left: 35%;
+    padding-left:8%;
+    padding-right: 8%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#aboutTextBox {
+    margin-top: 0px;
+}
+
+.caseStudySubHeading {
+    font-weight:700;
+    line-height: 0em;
+    padding-top: 10px;
+}
+
+/*skills Section*/ 
+
+#skillsSection {
+    margin-top: 60px;
+}
+
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    height: 200px;
+    margin: auto; 
+    padding: 10px;
+    align-items: center;
+}
+
+.skillItem {
+    margin: auto;
+    width: 33%;
+    height: 200px;
+    text-align:center;
+    align-items: center;
+}
+
+.skillHeading {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
 
 footer {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     text-align: center;
-    position:relative;
-    bottom: 10px;
+    position:static;
     width: 100%;
     height: 100%;
+    margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    #projectsSection {
+        height: 1400px;
+    }
+   
+    #projectCardGrid {
+        grid-gap: 130px;
+        overflow: hidden;
+        height: 1300px;
+        display: grid;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+    }
+    
+    #card1 {
+        grid-area: card1;
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img1"
+        "card1info"  
+    }
+    #card2 {
+        grid-area: card2;
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img2"
+        "card2info"  
+    }
+    #card3 {
+        grid-area: card3;
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img3"
+        "card3info"  
+    }
+    
+    #aboutSection {
+        background-color: #E5D4C4;
+        height: 750px;
+        width: 100vw;
+        display: block;
+        margin-top: 15%;
+    }
+    #aboutBeigeBox {
+        overflow: hidden;
+        background-color: transparent;
+        height: 100%;
+        width: 100vw;
+        position:static;
+        justify-self: center;
+        margin-left: 0;
+        padding-left:5%;
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+
+    #aboutTextBox {
+        margin-top: 0px;
+        width: 90%;
+    }
+
+
+    .flexcontainer {
+        flex-direction:column;
+        height: 500px;
+        justify-content: space-between;
+    }
+ }
