@@ -199,7 +199,7 @@ ul {
 
 
 #card1 {
-    border: 1px solid lightgrey;
+    border: 1px solid grey;
     box-shadow: 3px 3px 5px #5A6370;
     grid-area: card1;
     display: grid;
@@ -211,8 +211,11 @@ ul {
 }
 
 #img1 {
+    background-image: url(images/Frame\ 2\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: img1;
-    background-color: grey;
 }
 
 #card1info {
@@ -221,7 +224,7 @@ ul {
 }
 
 #card2 {
-    border: 1px solid lightgrey;
+    border: 1px solid grey;
     box-shadow: 3px 3px 5px #5A6370;
     grid-area: card2;
     display: grid;
@@ -232,8 +235,11 @@ ul {
 }
 
 #img2 {
+    background-image: url(images/Frame\ 3\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: img2;
-    background-color: grey;
 }
 
 #card2info {
@@ -242,7 +248,7 @@ ul {
 }
 
 #card3 {
-    border: 1px solid lightgrey;
+    border: 1px solid grey;
     box-shadow: 3px 3px 5px #5A6370;
     grid-area: card3;
     display: grid;
@@ -272,10 +278,10 @@ ul {
 }
 
 .readMoreBtn {
+    border:none;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     text-decoration: underline;
-    border: none;
     background:none;
     text-align: left;
     cursor: pointer;
